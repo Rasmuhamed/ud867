@@ -44,10 +44,17 @@ task closures << {
 task lists << {
     // TODO: Declare a list containing 5 of your favorite candies
     // HINT: Try searching for "groovy list literal"
-
+    def myFavouriteCandies = ["Haribo", "Jelly beans", "Kit Kat",
+     "Eclair", "Marshmallow"]
     // TODO: Create a new list of your candies in all caps
     // HINT: http://mrhaki.blogspot.ca/2010/05/groovy-goodness-use-collect-with.html
-
+    def capitalCandies = myFavouriteCandies.collect{it.toUpperCase()}
     // TODO: Print each capital candy
+    capitalCandies.each{println "My favourite candies: $it"}
+}
+
+task foobar << {
+  def foo = "bar"
+  println "$foo + foo = ${foo + "foo"}"
 
 }
