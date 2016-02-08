@@ -13,21 +13,23 @@ task stringsAndTypes << {
 
 
     // TODO: Create a variable named foo and assign it the value 4.2
-
+    def foo = 4.2
     // TODO: Print the value and class of foo
-
+    println "foo is now of type: ${foo.class} and has value: $foo"
     // TODO: Use string interpolation to print the square root of 127
     // HINT: http://docs.oracle.com/javase/7/docs/api/java/lang/Math.html
-
+    println "squre root of 127: ${Math.sqrt(127)}"
     // TODO: Assign the current date to foo and print it, along with its type
     // HINT:
     // http://docs.oracle.com/javase/7/docs/api/java/util/package-summary.html
-
+    foo = new java.util.Date()
+    println "foo is now of type: ${foo.class} and has value: $foo"
     // TODO: Use the `substring` method to extract my name from this string
     def hello = "Hello, Jeremy.";
-
+    def name = hello.substring(7,13)
+    println name
     // TODO: Use `toUpperCase` to capitalize and print my name
-
+    println name.toUpperCase()
 }
 
 task closures << {
