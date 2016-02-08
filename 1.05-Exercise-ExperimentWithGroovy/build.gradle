@@ -35,9 +35,10 @@ task stringsAndTypes << {
 task closures << {
     // TODO: Declare a closure that takes two arguments and adds them together
     // HINT: http://www.groovy-lang.org/closures.html
-
+    def myClosure = { x, y -> x + y }
     // TODO: Call your closure with arguments 17 and 25, and print the result
     // Beware that something like `println addTwo 17, 25` is ambiguous
+    println myClosure(17, 25)
 }
 
 task lists << {
