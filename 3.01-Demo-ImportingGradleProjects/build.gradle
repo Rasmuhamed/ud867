@@ -10,6 +10,10 @@ task tellJoke << {
     println "Gradle of Filth!"
 }
 
+task tellAnotherJoke << {
+    println "How long does it to take to master build tools?"
+    println "From the Gradle to the grave."
+}
 /*
 
 Let's import this project into Android Studio. Open Android Studio, and from
