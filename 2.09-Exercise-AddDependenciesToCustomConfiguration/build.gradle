@@ -42,4 +42,6 @@ task zipDeps(type: Zip){
   baseName = "dependencyArchive"
   classifier = 'deps'
   from configurations.deps
+  version = "4.2"
+
 }
